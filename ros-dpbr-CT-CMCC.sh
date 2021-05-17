@@ -32,7 +32,7 @@ done
 
 nets=`cat cmcc.txt`
 for net in $nets ; do
-  echo "add dst-address=$net action=lookup table=CT"
+  echo "add dst-address=$net action=lookup table=CMCC"
 done
 
 nets=`cat crtc.txt`
@@ -72,7 +72,7 @@ done
 
 nets=`cat cmcc.txt`
 for net in $nets ; do
-  echo "add list=dpbr-CT address=$net"
+  echo "add list=dpbr-CMCC address=$net"
 done
 
 nets=`cat crtc.txt`
